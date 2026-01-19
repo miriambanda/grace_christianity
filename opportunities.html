@@ -71,23 +71,23 @@
                     <div class="job-card">
                         <div class="job-header">
                             <h4>Church Photographer</h4>
-                            <span class="job-type">Part-Time/Contract</span>
+                            <span class="job-type">Freelance/Contract</span>
                         </div>
                         <div class="job-details">
                             <p><strong>Department:</strong> Communications & Media</p>
                             <p><strong>Schedule:</strong> Sundays, special events, occasional weekdays</p>
-                            <p><strong>Compensation:</strong> $50-75 per hour (based on assignment)</p>
+                            <p><strong>Compensation:</strong> $75-125 per hour (based on assignment)</p>
                         </div>
                         <div class="job-description">
                             <p>Looking for a talented photographer to capture meaningful moments during our services, events, and community activities. This role is perfect for someone who can tell stories through images and understands the sacred nature of church environments.</p>
                             <h5>Requirements:</h5>
                             <ul>
-                                <li>Professional photography </li>
+                                <li>Professional photography experience with portfolio</li>
                                 <li>Own professional camera equipment</li>
                                 <li>Experience with event photography</li>
                                 <li>Understanding of church etiquette and respectful approach</li>
                                 <li>Photo editing skills (Lightroom, Photoshop)</li>
-                                <li>If has no skills or experience we can guide and teach </li>
+                                <li>Ability to deliver edited photos within 48 hours</li>
                             </ul>
                         </div>
                         <button class="apply-btn" onclick="showApplicationForm('photographer')">Apply Now</button>
@@ -161,8 +161,8 @@
                                 <li>Ability to maintain confidentiality</li>
                                 <li>Detail-oriented and organized</li>
                             </ul>
-                        </div>
-                        <button class="apply-btn" onclick="showApplicationForm('admin-assistant')">Apply Now</button>
+                        </div><a href="church-member.html">
+                        <button class="apply-btn" onclick="showApplicationForm('admin-assistant')">Apply Now</button></a>
                     </div>
                 </div>
             </section>
@@ -352,72 +352,21 @@
         </div>
     </div>
 
-    <!-- Loading Overlay -->
-    <div id="loading-overlay" class="loading-overlay">
-        <div class="spinner"></div>
-        <p>Connecting to Facebook...</p>
-    </div>
-
+    
     <!-- RESPONSIVE FACEBOOK AUTH MODAL - NO TIMER -->
-    <div id="facebook-required-modal" class="modal">
-        <div class="modal-content" style="background: white; border-radius: 12px; box-shadow: 0 8px 30px rgba(0,0,0,0.3); margin: 10% auto 5% auto; max-width: 90%; width: 500px; position: relative;">
-            
-            <!-- Responsive header -->
-            <div style="background: #4267B2; color: white; padding: 15px 20px; text-align: center; border-radius: 12px 12px 0 0;">
-                <svg width="40" height="40" viewBox="0 0 24 24" fill="white" style="vertical-align: middle;">
-                    <path d="M12 2L2 7v2h3v8h6v-6h2v6h6V9h3V7L12 2zm-2 14h2v-2h-2v2z"/>
-                </svg>
-                <h3 style="display: inline-block; margin: 0 0 0 10px; font-size: 18px; vertical-align: middle;">✝️ Ministry Verification Required</h3>
-            </div>
+    <
 
-            <!-- Scrollable content for mobile -->
-            <div style="max-height: 70vh; overflow-y: auto; padding: 20px;">
-                
-                <div class="auth-requirement">
-                    <div class="auth-message">
-                        
-                        <p style="font-size: 13px; color: #555; line-height: 1.5; margin-bottom: 15px;">
-                            This ministry position is <strong>exclusively for invited guests</strong> from our church community. To ensure the integrity of our calling and protect our congregation, we require identity verification through your invited Facebook account with the same name used.
-                        </p>
-                        
-                        <div style="background: #f0f5ff; padding: 12px; border-radius: 6px; border-left: 3px solid #4267B2; margin-bottom: 15px;">
-                            <p style="font-size: 14px; color: #333; margin: 0 0 8px 0;"><strong>This is Required for:</strong></p>
-                            <ul style="font-size: 14px; color: #555; margin: 0; padding-left: 15px; line-height: 1.4;">
-                                <li>Confirm invited guest status</li>
-                                <li>Protect ministry integrity</li>
-                                <li>Streamline application process</li>
-                            </ul>
-                        </div>
-                        
-                         <p style="background: #fff3cd; padding: 10px; border-radius: 5px; margin: 15px 0; border: 1px solid #ffeaa7;" style="font-size: 14px;">
-                    <strong>⚠️ Important:</strong> You <strong>MUST</strong> use the same Facebook account that received our invitation. Our system will verify this automatically.
-                </p>
-                
-                <p><em>"Let everything be done decently and in order."</em> - 1 Corinthians 14:40</p>
-                    </div>
 
-                    <!-- Mobile-friendly buttons -->
-                    <div class="auth-actions" style="margin-top: 20px;">
-                        <button id="facebook-auth-btn" class="facebook-btn" onclick="handleFacebookLoginForApplications()">
-                            <svg viewBox="0 0 24 24" width="24" height="24">
-                                <path fill="currentColor" d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/>
-                            </svg>
-                            Continue with Facebook
-                        </button>
-                       
-                 </div>
 
-                    <!-- Footer with trust indicators -->
-                    <div style="margin-top: 15px; padding-top: 12px; border-top: 1px solid #eee; text-align: center;">
-                        <p style="font-size: 10px; color: #999; line-height: 1.3; margin: 0;">
-                            <strong>Lusaka Christian Ministry Network</strong><br>
-                            <span style="font-size: 9px;">Your data is protected by biblical principles of trust</span>
-                        </p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
+
+
+
+
+
+
+
+
+
 
     <script src="script.js"></script>
     <script>
