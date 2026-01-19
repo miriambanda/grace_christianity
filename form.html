@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Grace Community Church – Ministry Application</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<style>
+:root {
+  --primary: #1877F2;
+  --primary-dark: #145dbf;
+  --bg: #f0f2f5;
+  --text: #1c1e21;
+  --border: #dddfe2;
+}
+
+* {
+  box-sizing: border-box;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+}
+
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--text);
+}
+
+/* Container */
+.application-form-container {
+  max-width: 900px;
+  margin: 20px auto;
+  background: #fff;
+  border-radius: 14px;
+  box-shadow: 0 10px 30px rgba(0,0,0,.08);
+  overflow: hidden;
+}
+
+/* Header */
+.form-header {
+  background: linear-gradient(135deg, var(--primary), var(--primary-dark));
+  color: #fff;
+  text-align: center;
+  padding: 32px 20px;
+}
+
+.form-header h2 {
+  margin: 0 0 6px;
+  font-size: 26px;
+}
+
+.form-subtitle {
+  opacity: .9;
+}
+
+/* Sections */
+.form-section {
+  padding: 28px 24px;
+  border-bottom: 1px solid var(--border);
+}
+
+.form-section h3 {
+  margin-top: 0;
+  color: var(--primary);
+}
+
+/* Grid */
+.form-row {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 18px;
+}
+
+/* Inputs */
+.form-group {
+  margin-bottom: 18px;
+}
+
+label {
+  display: block;
+  font-weight: 600;
+  margin-bottom: 6px;
+  font-size: 14px;
+}
+
+input, select, textarea {
+  width: 100%;
+  padding: 12px;
+  border-radius: 8px;
+  border: 1px solid var(--border);
+  font-size: 15px;
+}
+
+input:focus,
+select:focus,
+textarea:focus {
+  outline: none;
+  border-color: var(--primary);
+  box-shadow: 0 0 0 2px rgba(24,119,242,.15);
+}
+
+/* Checkboxes & radios */
+.checkbox-group label,
+.radio-group label {
+  font-weight: normal;
+  margin-bottom: 6px;
+  display: block;
+}
+
+/* File input */
+input[type="file"] {
+  border: 2px dashed var(--border);
+  background: #fafafa;
+}
+
+/* Actions */
+.form-actions {
+  display: flex;
+  gap: 14px;
+  justify-content: flex-end;
+  padding: 20px 24px;
+  background: #f7f9fc;
+}
+
+button {
+  padding: 12px 22px;
+  border-radius: 8px;
+  font-weight: 600;
+  font-size: 15px;
+  cursor: pointer;
+}
+
+.btn-primary {
+  background: var(--primary);
+  color: #fff;
+  border: none;
+}
+
+.btn-primary:hover {
+  background: var(--primary-dark);
+}
+
+.btn-secondary {
+  background: #fff;
+  border: 1px solid var(--border);
+}
+
+/* Mobile */
+@media (max-width: 700px) {
+  .form-row {
+    grid-template-columns: 1fr;
+  }
+
+  .form-header h2 {
+    font-size: 22px;
+  }
+
+  .form-actions {
+    flex-direction: column;
+  }
+}
+</style>
+</head>
+
+<body>
+
+<div class="application-form-container">
+  <div class="form-header">
+    <h2>Ministry Position Application</h2>
+    <p class="form-subtitle">Grace Community Church – Lusaka</p>
+  </div>
+
+  <form id="ministryApplicationForm">
+
+    <section class="form-section">
+      <h3>Personal Information</h3>
+      <div class="form-row">
+        <div class="form-group">
+          <label>First Name *</label>
+          <input required>
+        </div>
+        <div class="form-group">
+          <label>Last Name *</label>
+          <input required>
+        </div>
+      </div>
+
+      <div class="form-row">
+        <div class="form-group">
+          <label>Email *</label>
+          <input type="email" required>
+        </div>
+        <div class="form-group">
+          <label>Phone *</label>
+          <input type="tel" required>
+        </div>
+      </div>
+    </section>
+
+    <section class="form-section">
+      <h3>Position Details</h3>
+      <div class="form-group">
+        <label>Position *</label>
+        <select required>
+          <option value="">Select</option>
+          <option>Worship Team</option>
+          <option>Sound / Media /photographer</option>
+          <option>Children’s Ministry</option>
+          <option>Administration</option>
+          <option>Volunteer</option>
+        </select>
+      </div>
+    </section>
+
+    <section class="form-section">
+      <h3>confirm the name of our church member who invited you</h3>
+      <div class="form-group">
+        <label>Full Name *</label>
+        <textarea rows="5" required></textarea>
+      </div>
+    </section>
+
+    <div class="form-actions">
+      <button type="reset" class="btn-secondary">Clear</button>
+      <button type="submit" class="btn-primary">Submit Application</button>
+    </div>
+
+  </form>
+</div>
+
+<script>
+document.getElementById('ministryApplicationForm').addEventListener('submit', e => {
+  e.preventDefault();
+  alert('✅ Application submitted . We will get back to you ');
+});
+</script>
+
+</body>
+</html>
